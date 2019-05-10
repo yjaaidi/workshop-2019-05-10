@@ -7,21 +7,15 @@ import { Sandwich } from './sandwich';
 })
 export class Cart {
 
-    constructor() {
-    }
+    private _sandwichList: Sandwich[] = [];
 
-    /**
-     * @deprecated work in progress
-     */
     addSandwich(sandwich: Sandwich) {
-        throw new Error('🚧 work in progress!');
+        this._sandwichList = [...this._sandwichList, sandwich];
     }
 
-    /**
-     * @deprecated work in progress
-     */
     getSandwichList(): Sandwich[] {
-        throw new Error('🚧 work in progress!');
+        return this._sandwichList;
     }
 
 }
+

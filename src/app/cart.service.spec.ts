@@ -10,7 +10,7 @@ describe('CartService', () => {
     let cart: Cart;
     beforeEach(() => cart = TestBed.get(Cart));
 
-    xit('should add sandwich', () => {
+    it('should add sandwich', () => {
 
         const burger = new Sandwich({title: 'Burger', price: 10});
         const butterButter = new Sandwich({title: 'Butter & Butter', price: 4.3});
